@@ -9,7 +9,16 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags 
+		{
+				"Queue" = "Transparent"
+
+				"IgnoreProjector" = "True"
+
+				"RenderType" = "Transparent"
+
+				"PreviewType" = "Plane"
+		}
         LOD 200
 
 		Fog{Mode off}

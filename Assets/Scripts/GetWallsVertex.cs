@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GetWallsVertex : MonoBehaviour
 {
+    [SerializeField] bool draw = false;
+
     CompositeCollider2D compositeCollider;
     List<Vector2[]> paths = new List<Vector2[]>();
 
@@ -26,7 +28,7 @@ public class GetWallsVertex : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (paths.Count != 0)
+        if (paths.Count != 0 && draw)
         {
             for (int indexPath = 0; indexPath < paths.Count; indexPath++)
             {

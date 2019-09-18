@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rigidbody2D;
 
-    Vector2 movement;
+    Vector3 movement;
 
     private void Awake()
     {
@@ -19,13 +19,13 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
+        movement.z = 0;
 
         if (movement.x > 0) { } 
-        else if (movement.x < 0) { } 
-    }
+        else if (movement.x < 0) { }
 
-    private void FixedUpdate()
-    {
-        rigidbody2D.position +=  (movement.normalized * speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, transform.position + movement.normalized, speed * Time.deltaTime);
+
+
     }
 }
