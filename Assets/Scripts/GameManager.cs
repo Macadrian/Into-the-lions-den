@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Occluder occluders;
+    public Transform playerTransform = default;
 
     public static GameManager Instance { get; private set; }
 

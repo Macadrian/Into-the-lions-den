@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
+    private GameManager gameManager;
 
     Rigidbody2D rigidbody2D;
 
@@ -12,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        gameManager = GameManager.Instance;
+        gameManager.playerTransform = transform;
+
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -25,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         else if (movement.x < 0) { }
 
         transform.position = Vector3.MoveTowards(transform.position, transform.position + movement.normalized, speed * Time.deltaTime);
-
+        gameManager.playerTransform = transform;
 
     }
 }
