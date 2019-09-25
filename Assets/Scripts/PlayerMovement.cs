@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x > 0) { } 
         else if (movement.x < 0) { }
 
-        transform.position = Vector3.MoveTowards(transform.position, transform.position + movement.normalized, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, transform.position + movement, speed * Time.deltaTime);
         gameManager.playerTransform = transform;
 
     }
