@@ -7,9 +7,15 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     private GameManager gameManager;
 
-    Rigidbody2D rigidbody2D;
+    public float MOVEMENT_BASE_SPEED;
 
-    Vector3 movement;
+    Rigidbody2D rigidbody2D;
+    private Vector2 movementDirection;
+
+    //evitar que con diferentes mados o input devices se cambie como se mueve el jugador
+    private float movementSpeed;
+
+    //Vector3 movement;
 
     private void Awake()
     {
@@ -21,14 +27,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
-        movement.z = 0;
+        movementDirection.x = Input.GetAxis("Horizontal");
+        movementDirection.y = Input.GetAxis("Vertical");
+        movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0f, 1.0f);
+        movementDirection.Normalize();
 
-        if (movement.x > 0) { } 
-        else if (movement.x < 0) { }
+        rigidbody2D.velocity = movementDirection * movementSpeed * MOVEMENT_BASE_SPEED;
 
-        transform.position = Vector3.MoveTowards(transform.position, transform.position + movement, speed * Time.deltaTime);
         gameManager.playerTransform = transform;
 
     }
