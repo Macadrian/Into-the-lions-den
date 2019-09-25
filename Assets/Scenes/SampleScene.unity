@@ -367,7 +367,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 1335
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -424,9 +424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee89323dd35f1dc41bfa9d3aaa4faf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 25
-  maxForce: 3
-  target: {fileID: 1902247960}
+  maxSpeed: 20
+  maxForce: 15
+  target: {fileID: 1902247956}
   stoppingDistance: 1
 --- !u!212 &812423816
 SpriteRenderer:
@@ -505,7 +505,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -3965,13 +3965,29 @@ GameObject:
   - component: {fileID: 1659228099}
   - component: {fileID: 1659228098}
   - component: {fileID: 1659228101}
-  m_Layer: 0
+  - component: {fileID: 1659228097}
+  m_Layer: 10
   m_Name: Bichito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1659228097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659228096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d22fe7ad4035be479ed15d0d531bb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 5
+  maxForce: 5
+  target: {fileID: 1902247956}
 --- !u!50 &1659228098
 Rigidbody2D:
   serializedVersion: 4
@@ -4132,8 +4148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  MOVEMENT_BASE_SPEED: 3
-  movementSpeed: 0
 --- !u!212 &1902247959
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -7,8 +7,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     private GameManager gameManager;
 
-    public float MOVEMENT_BASE_SPEED;
-
     Rigidbody2D rigidbody2D;
     private Vector2 movementDirection;
 
@@ -32,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0f, 1.0f);
         movementDirection.Normalize();
 
-        rigidbody2D.velocity = movementDirection * movementSpeed * MOVEMENT_BASE_SPEED;
+        rigidbody2D.velocity = movementDirection * speed;
 
         gameManager.playerTransform = transform;
 

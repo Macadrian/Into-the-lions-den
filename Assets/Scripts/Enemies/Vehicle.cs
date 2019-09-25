@@ -8,7 +8,7 @@ public class Vehicle : MonoBehaviour
     [Min(0)] public float maxSpeed = 5;
     [Min(0)] public float maxForce = 5;
 
-    public Transform target;
+    public GameObject target;
 
     protected Rigidbody2D rigidbody;
 
@@ -16,7 +16,7 @@ public class Vehicle : MonoBehaviour
     Vector3 acceleration;
 
 
-    private void Awake()
+    protected virtual void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -27,7 +27,7 @@ public class Vehicle : MonoBehaviour
 
         Vector2 steerForce = desiredVelocity2D - rigidbody.velocity;
 
-        Vector2.ClampMagnitude(steerForce, maxForce);
+        steerForce = Vector2.ClampMagnitude(steerForce, maxForce);
 
         return steerForce;
     }
