@@ -411,7 +411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &812423815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3988,6 +3988,10 @@ MonoBehaviour:
   maxSpeed: 5
   maxForce: 5
   target: {fileID: 1902247956}
+  mask:
+    serializedVersion: 2
+    m_Bits: 256
+  distanciaMin: 3.5
 --- !u!50 &1659228098
 Rigidbody2D:
   serializedVersion: 4
