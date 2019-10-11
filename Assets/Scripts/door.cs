@@ -4,25 +4,31 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
 
     public Sprite spriteOpen;
 
-    private bool inDoor = false;
+    protected bool inDoor = false;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        if(inDoor && Input.GetKey(KeyCode.Space))
+        UpdateDoor();
+    }
+
+    protected virtual void UpdateDoor()
+    {
+        if (inDoor && Input.GetKey(KeyCode.Space))
         {
             spriteRenderer.sprite = spriteOpen;
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
@@ -33,7 +39,7 @@ public class door : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    protected virtual void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         { 
