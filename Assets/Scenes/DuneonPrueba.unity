@@ -6460,6 +6460,11 @@ PrefabInstance:
       propertyPath: action_btn
       value: 
       objectReference: {fileID: 1866534686}
+    - target: {fileID: 4716665784446718166, guid: 9b52e0ca3633a77488ff4c778515789c,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b52e0ca3633a77488ff4c778515789c, type: 3}
 --- !u!1 &765014929
