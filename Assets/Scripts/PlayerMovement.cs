@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
+    public GameObject action_btn;
     private GameManager gameManager;
 
     Rigidbody2D rigidbody2D;
