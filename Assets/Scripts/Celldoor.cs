@@ -42,11 +42,17 @@ public class Celldoor : door
     {
         if (inDoor && Input.GetKey(KeyCode.Space))
         {
-            spriteRenderer.sprite = spriteOpen;
-            spriteRendererShadow.sprite = spriteOpenShadow;
-            colliderTriggerOpen.enabled = false;
-            collider2DFront.enabled = false;
-            collider2DUnder.enabled = false;
+            if (manager.silverKey)
+            {
+                spriteRenderer.sprite = spriteOpen;
+                spriteRenderer.sprite = spriteOpen;
+                spriteRendererShadow.sprite = spriteOpenShadow;
+                colliderTriggerOpen.enabled = false;
+                collider2DFront.enabled = false;
+                collider2DUnder.enabled = false;
+                manager.silverKey = false;
+            }
+
 
             if (isUnder)
             {

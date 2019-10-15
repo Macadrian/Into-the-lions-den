@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public Occluder occluders;
     public Transform playerTransform = default;
+    public bool silverKey = false;
+    public bool goldenKey = false;
 
     public static GameManager Instance { get; private set; }
 

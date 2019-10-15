@@ -6,13 +6,19 @@ public class door : MonoBehaviour
 {
     protected SpriteRenderer spriteRenderer;
 
+    public GameObject me;
+
     public Sprite spriteOpen;
+
+    protected GameManager manager;
 
     protected bool inDoor = false;
 
     protected virtual void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        me = GetComponent<GameObject>();
+        manager = GameManager.Instance;
     }
 
     protected virtual void Update()
@@ -24,7 +30,12 @@ public class door : MonoBehaviour
     {
         if (inDoor && Input.GetKey(KeyCode.Space))
         {
-            spriteRenderer.sprite = spriteOpen;
+            if (manager.goldenKey)
+            {
+                spriteRenderer.sprite = spriteOpen;
+                manager.goldenKey = false;
+            }
+            
         }
     }
 
@@ -34,7 +45,7 @@ public class door : MonoBehaviour
         {
             inDoor = true;
             collision.GetComponent<PlayerMovement>().action_btn.gameObject.SetActive(true);
-            Debug.Log("El jugador está en la puerta");
+            //Debug.Log("El jugador está en la puerta");
             
         }
     }
@@ -43,7 +54,7 @@ public class door : MonoBehaviour
     {
         if (collision.tag == "Player")
         { 
-            Debug.Log("El jugador se ha alejado de la puerta");
+            //Debug.Log("El jugador se ha alejado de la puerta");
             inDoor = false;
             collision.GetComponent<PlayerMovement>().action_btn.gameObject.SetActive(false);
         }
