@@ -9,7 +9,10 @@ public class PlayerMovement : MonoBehaviour
     private GameManager gameManager;
 
     Rigidbody2D rigidbody2D;
+    private Animator myAnimator;
+
     private Vector2 movementDirection;
+    private bool facingRight = true;
 
     //evitar que con diferentes mados o input devices se cambie como se mueve el jugador
     private float movementSpeed;
@@ -18,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        myAnimator = GetComponent<Animator>();
         gameManager = GameManager.Instance;
         gameManager.playerTransform = transform;
 
@@ -35,5 +39,37 @@ public class PlayerMovement : MonoBehaviour
 
         gameManager.playerTransform = transform;
 
+        setAnimations();
+
+    }
+
+    private void setAnimations() {
+        if(facingRight && movementDirection.x < 0)
+        {
+            flip();
+        }
+        else
+        {
+            if (!facingRight && movementDirection.x > 0)
+            {
+                flip();
+            }
+        }
+
+        if (movementDirection.x == 0 && movementDirection.y == 0) {
+            myAnimator.SetBool("Walking", false);
+        }
+        else
+        {
+            myAnimator.SetBool("Walking", true);
+        }
+    }
+
+    private void flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }
