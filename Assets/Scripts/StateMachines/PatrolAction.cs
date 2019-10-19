@@ -13,7 +13,7 @@ public class PatrolAction : AI_Action
 
     private void Patrol(StateController controller)
     {
-        /*var unit = controller.unit;
+        var unit = controller.unit;
         if (!unit.currentPath)
         {
             unit.target = controller.wayPointList[controller.nextWayPoint];
@@ -23,7 +23,7 @@ public class PatrolAction : AI_Action
         {
             unit.currentPath = false;
             controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPointList.Count;
-        }*/
+        }
     }
     
 }
