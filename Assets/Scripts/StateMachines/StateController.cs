@@ -23,7 +23,7 @@ public class StateController : MonoBehaviour
     void Awake()
     {
         gameManager = GameManager.Instance;
-        vision = GetComponent<VisionSensor>();
+        vision = GetComponentInChildren<VisionSensor>();
         unit = GetComponent<Unit>();
         playerTransform = gameManager.playerTransform;
     }

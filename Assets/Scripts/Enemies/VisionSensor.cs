@@ -20,7 +20,7 @@ public class VisionSensor : MonoBehaviour
         {
             Vector3 dirToTarget = (target.position - transform.position).normalized;
             float angle = Vector3.Angle(transform.right, dirToTarget);
-
+            Debug.Log(angle);
             if (angle < angleVision / 2)
             {
                 if (!Physics2D.Raycast(transform.position, dirToTarget, distanceToTarget, obstacleMask))

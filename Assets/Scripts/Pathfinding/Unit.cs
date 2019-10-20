@@ -11,10 +11,10 @@ public class Unit : MonoBehaviour
     public float turnSpeed = 2.5f;
     public float turnDst = 5;
 
-    Quaternion rotation;
+    public Transform visionSensor;
 
-    /*Vector3[] path;
-    int targetIndex; --> */
+    Quaternion rotation;
+    
     Path path;
 
     public bool currentPath;
@@ -82,6 +82,7 @@ public class Unit : MonoBehaviour
             {
                 transform.rotation = rotation;
                 Quaternion targetRotation = Quaternion.LookRotation(path.lookPoints[pathIndex] - transform.position);
+                //visionSensor.rotation = targetRotation;
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
                 transform.Translate(Vector3.forward * Time.deltaTime * speed, Space.Self);
 
@@ -92,30 +93,6 @@ public class Unit : MonoBehaviour
             yield return null;
         }
     }
-
-    /*IEnumerator FollowPathOld()
-    {
-        Vector3 currentWaypoint = path[0];
-
-        while (true)
-        {
-            if (transform.position == currentWaypoint)
-            {
-                targetIndex++;
-                if (targetIndex >= path.Length)
-                {
-                    pathEnded = true;
-                    currentPath = false;
-                    yield break;
-                }
-                currentWaypoint = path[targetIndex];
-            }
-
-            transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, speed * Time.deltaTime);
-            yield return null;
-
-        }
-    }*/
 
     public void OnDrawGizmos()
     {
