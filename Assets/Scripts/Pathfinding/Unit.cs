@@ -11,11 +11,14 @@ public class Unit : MonoBehaviour
     public float turnSpeed = 2.5f;
     public float turnDst = 5;
 
+    int targetIndex;
+    Vector3[] path;
+
     public Transform visionSensor;
 
     Quaternion rotation;
     
-    Path path;
+    //Path path;
 
     public bool currentPath;
     
@@ -30,7 +33,9 @@ public class Unit : MonoBehaviour
     {
         if (pathSuccessful)
         {
-            path = new Path(waypoints, transform.position, turnDst);
+            //path = new Path(waypoints, transform.position, turnDst);
+            path = waypoints;
+            targetIndex = 0;
             StopCoroutine("FollowPath");
             StartCoroutine("FollowPath");
         }
@@ -57,6 +62,30 @@ public class Unit : MonoBehaviour
     }
 
     IEnumerator FollowPath()
+    {
+        bool followingPath = true;
+        Vector3 currentWayPoint = path[0];
+
+        while (followingPath)
+        {
+            if (transform.position == currentWayPoint)
+            {
+                targetIndex++;
+                if (targetIndex >= path.Length)
+                {
+                    currentPath = true;
+                    followingPath = false;
+                    yield break;
+                }
+                currentWayPoint = path[targetIndex];
+            }
+
+            transform.position = Vector3.MoveTowards(transform.position, currentWayPoint, speed * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    /*IEnumerator FollowPath()
     {
         bool followingPath = true;
         int pathIndex = 0;
@@ -92,13 +121,13 @@ public class Unit : MonoBehaviour
             }
             yield return null;
         }
-    }
+    }*/
 
     public void OnDrawGizmos()
     {
         if (path != null)
         {
-            path.DrawWithGizmos();
+            //path.DrawWithGizmos();
         }
     }
 }
