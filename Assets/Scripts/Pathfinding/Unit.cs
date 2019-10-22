@@ -14,8 +14,6 @@ public class Unit : MonoBehaviour
     int targetIndex;
     Vector3[] path;
 
-    public Transform visionSensor;
-
     Quaternion rotation;
     
     //Path path;
@@ -64,18 +62,11 @@ public class Unit : MonoBehaviour
     IEnumerator FollowPath()
     {
         bool followingPath = true;
-        Vector3 currentWayPoint = path[0];
-        visionSensor.LookAt(path[path.Length - 1]);
-
-        //Quaternion targetRotation = Quaternion.LookRotation(path[path.Length - 1] - transform.position);
-        //visionSensor.rotation = targetRotation;
-        //visionSensor.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
-        /*Debug.Log(visionSensor.rotation.y);
-        Quaternion rotation = new Quaternion(0, 0, visionSensor.rotation.y, 0);
-        visionSensor.rotation = rotation;*/
+        Vector3 currentWayPoint = path[0];      
 
         while (followingPath)
         {
+
             if (transform.position == currentWayPoint)
             {
                 targetIndex++;
