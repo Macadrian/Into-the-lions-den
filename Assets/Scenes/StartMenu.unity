@@ -147,7 +147,10 @@ MonoBehaviour:
   menuButtonController: {fileID: 2052938777}
   animator: {fileID: 132999129}
   animatorFunctions: {fileID: 132999128}
-  thisIndex: 1
+  thisIndex: 3
+  manager: {fileID: 1595507677}
+  otherMenu: {fileID: 1486738311}
+  selfMenu: {fileID: 2052938772}
 --- !u!114 &132999128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,6 +821,9 @@ MonoBehaviour:
   animator: {fileID: 390944020}
   animatorFunctions: {fileID: 390944021}
   thisIndex: 1
+  manager: {fileID: 1595507677}
+  otherMenu: {fileID: 2052938772}
+  selfMenu: {fileID: 1486738311}
 --- !u!1 &508513952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,7 +1282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1486738312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1436,6 +1442,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512114804}
   m_CullTransparentMesh: 0
+--- !u!1 &1595507676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595507678}
+  - component: {fileID: 1595507677}
+  m_Layer: 0
+  m_Name: GAMEMANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1595507677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595507676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd96af488cb2d748880e0dd35db1a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occluders: {fileID: 0}
+  playerTransform: {fileID: 0}
+  silverKey: 0
+  goldenKey: 0
+--- !u!4 &1595507678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595507676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1669943178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2052938773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1826,9 +1879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fd4dd971389b640ad9f0a9e99f8106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 2
   keyDown: 0
-  maxIndex: 1
+  maxIndex: 3
   audioSource: {fileID: 242571930}
 --- !u!82 &2052938778
 AudioSource:
@@ -2083,6 +2136,9 @@ MonoBehaviour:
   animator: {fileID: 2070213547}
   animatorFunctions: {fileID: 2070213548}
   thisIndex: 2
+  manager: {fileID: 1595507677}
+  otherMenu: {fileID: 0}
+  selfMenu: {fileID: 0}
 --- !u!1001 &3838663482641272735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2244,3 +2300,6 @@ MonoBehaviour:
   animator: {fileID: 3838663482641272737}
   animatorFunctions: {fileID: 3838663482641272738}
   thisIndex: 0
+  manager: {fileID: 1595507677}
+  otherMenu: {fileID: 0}
+  selfMenu: {fileID: 0}
