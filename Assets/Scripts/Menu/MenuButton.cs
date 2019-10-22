@@ -28,17 +28,20 @@ public class MenuButton : MonoBehaviour
 				animatorFunctions.disableOnce = true;
                 switch (menuButtonController.index)
                 {
-                    case 0:
+                    case 0: //New game
                         manager.CambiarEscena();
                         break;
-                    case 1:
+
+                    case 1: //Options
                         otherMenu.SetActive(true);
                         selfMenu.SetActive(false);
                         break;
-                    case 2:
+
+                    case 2://Quit
                         manager.Salir();
                         break;
-                    case 3:
+
+                    case 3: //Back
                         otherMenu.SetActive(true);
                         selfMenu.SetActive(false);
                         break;
