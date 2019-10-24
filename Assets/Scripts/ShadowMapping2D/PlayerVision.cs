@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+/*[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class PlayerVision : ShadowCaster
 {
     [Header("Range Properties")]
@@ -58,4 +58,4 @@ public class PlayerVision : ShadowCaster
 
         return materialPropertyBlock;
     }
-}
+}*/
