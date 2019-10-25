@@ -41258,7 +41258,7 @@ GameObject:
   - component: {fileID: 1316363204}
   - component: {fileID: 1316363205}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: VisionObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41293,9 +41293,11 @@ MonoBehaviour:
   radiusVision: 7
   angleVision: 90
   rigidbody: {fileID: 0}
-  obstacleMask:
-    serializedVersion: 2
+  layerMasksList:
+  - serializedVersion: 2
     m_Bits: 256
+  - serializedVersion: 2
+    m_Bits: 4096
 --- !u!1 &1382001562
 GameObject:
   m_ObjectHideFlags: 0
@@ -41995,7 +41997,7 @@ GameObject:
   - component: {fileID: 1744515603}
   - component: {fileID: 1744515605}
   - component: {fileID: 1744515606}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
