@@ -8,27 +8,22 @@ public class grassTiles : MonoBehaviour
     private Tilemap myTilemap;
     private Color colorin;
 
+    [HideInInspector] public bool playerHided;
+
     // Start is called before the first frame update
     void Start()
     {
         myTilemap = GetComponent<Tilemap>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("Escondido");
             colorin = myTilemap.color;
             colorin.a = 0.35f;
             myTilemap.color = colorin;
-
+            playerHided = true;
         }
     }
 
@@ -36,11 +31,10 @@ public class grassTiles : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("Escondido");
             colorin = myTilemap.color;
             colorin.a = 1f;
             myTilemap.color = colorin;
-
+            playerHided = false;
         }
     }
 

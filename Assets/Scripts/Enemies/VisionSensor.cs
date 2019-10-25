@@ -10,16 +10,7 @@ public class VisionSensor : MonoBehaviour
     [Range(0, 360)] public float angleVision = 90f;
     public Rigidbody2D rigidbody;
 
-    LayerMask obstacleMask;
-    public List<LayerMask> layerMasksList;    
-
-    private void Awake()
-    {
-        foreach (var region in layerMasksList)
-        {
-            obstacleMask.value |= region.value;
-        }        
-    }
+    public LayerMask obstacleMask;
 
     public bool IsTargetVisible(Transform target)
     {

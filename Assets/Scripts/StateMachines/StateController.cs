@@ -15,8 +15,13 @@ public class StateController : MonoBehaviour
     [HideInInspector] public Transform playerTransform;
 
     [HideInInspector] public List<Transform> wayPointList;
-    [HideInInspector] public int nextWayPoint;   
+    [HideInInspector] public int nextWayPoint;  
+    
+    [HideInInspector] public float timeWaited;
     [HideInInspector] public float waitTime;
+    [HideInInspector] public bool wait;
+
+    public GameObject grass;
 
     private bool aiActive;
 
@@ -26,6 +31,8 @@ public class StateController : MonoBehaviour
         vision = GetComponentInChildren<VisionSensor>();
         unit = GetComponent<Unit>();
         playerTransform = gameManager.playerTransform;
+
+        waitTime = 2f;
     }
 
     public void SetupAI(bool aiActivationFromEnemyController, List<Transform> wayPointsFromEnmeyController)
@@ -39,6 +46,11 @@ public class StateController : MonoBehaviour
         if (!aiActive)
             return;
         currentState.UpdateState(this);
+
+        if (wait)
+        {
+            timeWaited += Time.deltaTime;
+        }
     }
 
     public void TransitionToState(State nextState)
@@ -47,5 +59,15 @@ public class StateController : MonoBehaviour
         {
             currentState = nextState;
         }
+    }
+
+    public void Wait()
+    {
+        wait = true;
+    }
+
+    public bool PlayerInGrass()
+    {
+        return grass.GetComponent<grassTiles>().playerHided;
     }
 }

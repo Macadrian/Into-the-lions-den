@@ -11498,12 +11498,12 @@ PrefabInstance:
     - target: {fileID: 4716665784446718168, guid: 9b52e0ca3633a77488ff4c778515789c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.9
+      value: -29.28
       objectReference: {fileID: 0}
     - target: {fileID: 4716665784446718168, guid: 9b52e0ca3633a77488ff4c778515789c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21
+      value: 6.58
       objectReference: {fileID: 0}
     - target: {fileID: 4716665784446718168, guid: 9b52e0ca3633a77488ff4c778515789c,
         type: 3}
@@ -22417,7 +22417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765014929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.9, y: 21, z: -10}
+  m_LocalPosition: {x: -29.28, y: 6.5799994, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1539857968}
@@ -22741,7 +22741,10 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   wayPointList: []
   nextWayPoint: 0
+  timeWaited: 0
   waitTime: 0
+  wait: 0
+  grass: {fileID: 1744515601}
 --- !u!1 &1034412045
 GameObject:
   m_ObjectHideFlags: 0
@@ -41291,13 +41294,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radiusVision: 7
-  angleVision: 90
+  angleVision: 360
   rigidbody: {fileID: 0}
-  layerMasksList:
-  - serializedVersion: 2
+  obstacleMask:
+    serializedVersion: 2
     m_Bits: 256
-  - serializedVersion: 2
-    m_Bits: 4096
 --- !u!1 &1382001562
 GameObject:
   m_ObjectHideFlags: 0
@@ -42246,6 +42247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db124b7d29e16b4e98d6499857a33a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHided: 0
 --- !u!1 &1865566691
 GameObject:
   m_ObjectHideFlags: 0
