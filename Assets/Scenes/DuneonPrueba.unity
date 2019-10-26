@@ -504,12 +504,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f637273cd5d0704094e6619fc2a006a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayGridGizmos: 0
+  displayGridGizmos: 1
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 256
   gridWorldSize: {x: 80, y: 59}
-  nodeRadius: 0.2
+  nodeRadius: 0.1
   walkableRegions:
   - terrainMask:
       serializedVersion: 2
