@@ -84,4 +84,78 @@ public class GameManager : MonoBehaviour
 
         return mesh;
     }
+
+    public void PauseGameForDialogs()
+    {
+        Time.timeScale = 0f;
+
+        //Disable the scripts and object that continue
+        GameObject[] baseEnemies = GameObject.FindGameObjectsWithTag("BaseEnemy");
+        if (baseEnemies != null)
+        {
+            for (int i = 0; i < baseEnemies.Length; i++)
+            {
+                baseEnemies[i].GetComponent<Unit>().enabled = false;
+            }
+        }
+
+        GameObject[] bichitos = GameObject.FindGameObjectsWithTag("Bichito");
+        if (bichitos != null)
+        {
+            for(int i = 0; i < bichitos.Length; i++)
+            {
+                bichitos[i].GetComponent<Bug>().enabled = false;
+            }
+        }
+
+        GameObject[] fantasmas = GameObject.FindGameObjectsWithTag("Ghost");
+        if (fantasmas != null)
+        {
+            for (int i = 0; i < fantasmas.Length; i++)
+            {
+                fantasmas[i].GetComponent<Fantasma>().enabled = false;
+            }
+        }
+    }
+
+    public void PauseGame()
+    {
+        PauseGameForDialogs();
+
+        //Enable panel for pause menu
+
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+
+        //Enable the scripts and object that continue
+        GameObject[] baseEnemies = GameObject.FindGameObjectsWithTag("BaseEnemy");
+        if (baseEnemies != null)
+        {
+            for (int i = 0; i < baseEnemies.Length; i++)
+            {
+                baseEnemies[i].GetComponent<Unit>().enabled = true;
+            }
+        }
+
+        GameObject[] bichitos = GameObject.FindGameObjectsWithTag("Bichito");
+        if (bichitos != null)
+        {
+            for (int i = 0; i < bichitos.Length; i++)
+            {
+                bichitos[i].GetComponent<Bug>().enabled = true;
+            }
+        }
+
+        GameObject[] fantasmas = GameObject.FindGameObjectsWithTag("Ghost");
+        if (fantasmas != null)
+        {
+            for (int i = 0; i < fantasmas.Length; i++)
+            {
+                fantasmas[i].GetComponent<Fantasma>().enabled = true;
+            }
+        }
+    }
 }
