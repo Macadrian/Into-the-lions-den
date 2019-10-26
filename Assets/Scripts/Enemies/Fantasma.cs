@@ -14,7 +14,7 @@ public class Fantasma : Vehicle
     Animator myAnimator;
 
     private Rigidbody2D targetRigidBody;
-    // Start is called before the first frame update
+
     protected override void Awake()
     {
         base.Awake();

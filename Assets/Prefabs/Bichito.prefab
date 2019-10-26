@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7058393114707746412}
   - component: {fileID: 7058393114707746411}
   - component: {fileID: 7058393114707746415}
-  - component: {fileID: 8033128791323022098}
+  - component: {fileID: 3302764251149202436}
   m_Layer: 10
   m_Name: Bichito
   m_TagString: Untagged
@@ -151,7 +151,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   distanciaMin: 3.5
---- !u!114 &8033128791323022098
+--- !u!114 &3302764251149202436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7058393114707746414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2a3c70afed06a84fa41104d0a6b693b, type: 3}
+  m_Script: {fileID: 11500000, guid: ecf489276b9e3814e876bcb7c4885eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shadowMapSlot: -1

@@ -8,10 +8,13 @@ public class Bug : Vehicle
     public LayerMask mask;
     public float distanciaMin = 3.5f;
 
+    public GameManager manager;
+    private Transform target;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = manager.playerTransform;
     }
 
     // Update is called once per frame
