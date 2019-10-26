@@ -14,6 +14,5 @@ public class FollowPlayerAction : AI_Action
     {
         var unit = controller.unit;
         unit.target = controller.playerTransform;
-
     }
 }

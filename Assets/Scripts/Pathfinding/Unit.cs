@@ -21,10 +21,13 @@ public class Unit : MonoBehaviour
 
     public bool currentPath;
 
+    public bool jugadorAlcanzado;
+
     void Start()
     {
         rotation = Quaternion.identity;
         currentPath = false;
+        jugadorAlcanzado = false;
         StartCoroutine(UpdatePath());
     }
 
@@ -82,6 +85,14 @@ public class Unit : MonoBehaviour
 
             transform.position = Vector3.MoveTowards(transform.position, currentWayPoint, speed * Time.deltaTime);
             yield return null;
+        }
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            jugadorAlcanzado = true;
         }
     }
 

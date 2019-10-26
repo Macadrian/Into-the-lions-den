@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1491862c498dd64abd923ce1a9b785d, type: 3}
-  m_Name: REMAININGSTATE
+  m_Script: {fileID: 11500000, guid: f71a84121c30b0b489567f12f09d80ff, type: 3}
+  m_Name: JugadorAlcanzado
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []
-  sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

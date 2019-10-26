@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     public bool silverKey = false;
     public bool goldenKey = false;
 
+    public Transform spawnPoint;
+    
+    public List<GameObject> enemies;
+    public List<Transform> enemySpawnPoint;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -17,6 +22,15 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+        }
+    }
+    
+    public void ResetLevel()
+    {
+        playerTransform.position = spawnPoint.position;
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            enemies[i].transform.position = enemySpawnPoint[i].position;
         }
     }
 

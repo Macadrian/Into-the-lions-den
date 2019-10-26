@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1491862c498dd64abd923ce1a9b785d, type: 3}
-  m_Name: REMAININGSTATE
+  m_Name: Reset
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []
+  actions:
+  - {fileID: 11400000, guid: bbf74bcc8f409fa4b8775e0a69928d32, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 18235d08c5c45b24db94d67fa149a9b2, type: 2}
+    trueState: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1, type: 2}
+    falseState: {fileID: 11400000, guid: 468fcf3ee341a92438423504765cea01, type: 2}
   sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
