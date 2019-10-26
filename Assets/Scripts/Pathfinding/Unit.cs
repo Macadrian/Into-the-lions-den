@@ -5,7 +5,7 @@ public class Unit : MonoBehaviour
 {
 
     const float minPathUpdateTime = .2f;
-    const float pathUpdateMoveThreshold = .5f;
+    const float pathUpdateMoveThreshold = .2f;
 
     public Transform target;
     public float speed = 2.5f;
@@ -13,6 +13,7 @@ public class Unit : MonoBehaviour
     public float turnDst = 5;
 
     private bool facingLeft = false;
+    public bool followingPath;
 
     int targetIndex;
     Vector3[] path;
@@ -67,7 +68,7 @@ public class Unit : MonoBehaviour
 
     IEnumerator FollowPath()
     {
-        bool followingPath = true;
+        followingPath = true;
         Vector3 currentWayPoint = path[0];
 
         while (followingPath)
@@ -109,6 +110,14 @@ public class Unit : MonoBehaviour
         {
             jugadorAlcanzado = true;
         }
+    }
+
+    private void Flip()
+    {
+        facingLeft = !facingLeft;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 
     /*IEnumerator FollowPath()
@@ -268,19 +277,4 @@ public class Unit : MonoBehaviour
         }
     }*/
 
-    public void OnDrawGizmos()
-    {
-        if (path != null)
-        {
-            //path.DrawWithGizmos();
-        }
-    }
-
-    private void Flip()
-    {
-        facingLeft = !facingLeft;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-    }
 }

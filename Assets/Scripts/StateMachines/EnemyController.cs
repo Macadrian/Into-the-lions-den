@@ -25,7 +25,8 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (stateControler.currentState.name == "PatrolAction")
+        Debug.Log(stateControler.currentState.name);
+        if (stateControler.currentState.name == "Patrullar")
         {
             myAnimator.SetBool("walking", true);
         }
@@ -40,7 +41,8 @@ public class EnemyController : MonoBehaviour
 
         if (stateControler.currentState.name == "WaitingState") {
             interrogation.SetActive(true);
-            myAnimator.SetBool("walking", false);
+            if (!stateControler.unit.followingPath)
+                myAnimator.SetBool("walking", false);
         }
         else
             interrogation.SetActive(false);

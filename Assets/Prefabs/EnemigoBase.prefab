@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 5800537717055456131}
   - component: {fileID: 5800537717055456134}
   - component: {fileID: 222345468670768523}
+  - component: {fileID: 8556710298107070815}
   m_Layer: 0
   m_Name: EnemigoBase
   m_TagString: Untagged
@@ -346,6 +347,25 @@ MonoBehaviour:
   mAngleFalloffExponent: 1
   mFullBrightRadius: 0
   mVel: {x: 0, y: 0, z: 0}
+--- !u!95 &8556710298107070815
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800537717055456253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 095eb8d086765a14b9ddb826b90a82b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5800537717378774400
 GameObject:
   m_ObjectHideFlags: 0
