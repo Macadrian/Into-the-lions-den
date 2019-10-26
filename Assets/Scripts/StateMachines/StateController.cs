@@ -46,7 +46,7 @@ public class StateController : MonoBehaviour
         if (!aiActive)
             return;
         currentState.UpdateState(this);
-
+        Debug.Log(currentState);
         if (wait)
         {
             timeWaited += Time.deltaTime;
@@ -59,11 +59,6 @@ public class StateController : MonoBehaviour
         {
             currentState = nextState;
         }
-    }
-
-    public void Wait()
-    {
-        wait = true;
     }
 
     public bool PlayerInGrass()

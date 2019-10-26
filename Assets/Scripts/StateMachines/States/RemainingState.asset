@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1491862c498dd64abd923ce1a9b785d, type: 3}
-  m_Name: RemainState
+  m_Name: RemainingState
   m_EditorClassIdentifier: 
   actions: []
   transitions: []

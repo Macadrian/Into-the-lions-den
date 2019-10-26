@@ -11,6 +11,11 @@ public class VisionSensor : MonoBehaviour
 
     public LayerMask obstacleMask;
 
+    public void UpdateLayerMask(LayerMask layer)
+    {
+        obstacleMask.value |= layer.value;
+    }
+
     public bool IsTargetVisible(Transform target)
     {
         float distanceToTarget = Vector3.Distance(transform.position, target.position);

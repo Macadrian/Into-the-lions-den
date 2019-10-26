@@ -10,6 +10,7 @@ public class TimeWaitedDecision : Decision
         if (controller.timeWaited >= controller.waitTime)
         {
             controller.timeWaited = 0;
+            controller.wait = false;
             return true;
         }
         return false;

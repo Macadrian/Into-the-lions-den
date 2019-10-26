@@ -42100,11 +42100,11 @@ CompositeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -61625,5 +61625,11 @@ PrefabInstance:
       propertyPath: grass
       value: 
       objectReference: {fileID: 1744515601}
+    - target: {fileID: 5800537717055456134, guid: 823f963a222a7774cbd82f235e71de14,
+        type: 3}
+      propertyPath: remainState
+      value: 
+      objectReference: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 823f963a222a7774cbd82f235e71de14, type: 3}

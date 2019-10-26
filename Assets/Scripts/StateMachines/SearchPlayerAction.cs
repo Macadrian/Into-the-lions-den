@@ -13,7 +13,7 @@ public class SearchPlayerAction : AI_Action
     private void SearchPlayer(StateController controller)
     {
         controller.unit.target = controller.unit.transform;
-        controller.Wait();
+        controller.wait = true;
     }
 }
 

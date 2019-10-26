@@ -7,6 +7,6 @@ public class WaitingTime : Decision
 {
     public override bool Decide(StateController controller)
     {
-        return controller.vision.IsTargetVisible(controller.playerTransform) && controller.PlayerInGrass();
+        return controller.PlayerInGrass();
     }
 }

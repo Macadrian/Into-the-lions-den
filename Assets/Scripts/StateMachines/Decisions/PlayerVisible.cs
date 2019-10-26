@@ -7,6 +7,6 @@ public class PlayerVisible : Decision
 {
     public override bool Decide(StateController controller)
     {
-        return controller.vision.IsTargetVisible(controller.playerTransform) && controller.timeWaited == 0;
+        return controller.vision.IsTargetVisible(controller.playerTransform) && !controller.PlayerInGrass();
     }
 }
