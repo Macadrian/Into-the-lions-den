@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2845509901480913499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.005, y: 0.54, z: 0}
-  m_LocalScale: {x: 0.5723987, y: 0.5723987, z: 0.5723987}
+  m_LocalScale: {x: 0.64246035, y: 0.64246035, z: 0.64246035}
   m_Children: []
   m_Father: {fileID: 5800537717055456135}
   m_RootOrder: 1
@@ -107,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 4059686350864401993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.005, y: 0.54, z: 0}
-  m_LocalScale: {x: 0.5723987, y: 0.5723987, z: 0.5723987}
+  m_LocalScale: {x: 0.64246035, y: 0.64246035, z: 0.64246035}
   m_Children: []
   m_Father: {fileID: 5800537717055456135}
   m_RootOrder: 2
@@ -218,7 +218,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d713672674ce7a24e9b9e66c1ec8a66c, type: 2}
+  - {fileID: 2100000, guid: ee4530dca5e7cdd44871629787b52e26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -297,6 +297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afa7f0ef3050154cb661dfe11ed0243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  excalmation: {fileID: 2845509901480913499}
+  interrogation: {fileID: 4059686350864401993}
   wayPointList:
   - {fileID: 0}
   - {fileID: 0}
