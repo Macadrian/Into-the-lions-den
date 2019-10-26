@@ -86,7 +86,7 @@ public class TextBoxManager : MonoBehaviour
         textBox.SetActive(false);
         isActive = false;
 
-        gameManager.ResumeGame();
+        gameManager.ResumeGameFromDialogs();
     }
 
     public void ReloadScript(TextAsset theText)

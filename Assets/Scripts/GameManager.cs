@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public List<GameObject> ghostEnemies;
     public List<Transform> ghostEnemySpawnPoint;
 
+    public GameObject pauseCanvas;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -26,7 +28,19 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
     }
-    
+
+    private void Update()
+    {
+        /* No funciona el menú de pausa
+        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
+
+        */
+    }
+
     public void ResetLevel()
     {
         playerTransform.position = spawnPoint.position;
@@ -123,10 +137,10 @@ public class GameManager : MonoBehaviour
         PauseGameForDialogs();
 
         //Enable panel for pause menu
+        pauseCanvas.SetActive(true);
+    }   
 
-    }
-
-    public void ResumeGame()
+    public void ResumeGameFromDialogs()
     {
         Time.timeScale = 1f;
 
@@ -157,5 +171,12 @@ public class GameManager : MonoBehaviour
                 fantasmas[i].GetComponent<Fantasma>().enabled = true;
             }
         }
+    }
+
+    public void ResumeGame()
+    {
+        ResumeGameFromDialogs();
+
+        pauseCanvas.SetActive(false);
     }
 }

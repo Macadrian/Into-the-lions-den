@@ -1475,6 +1475,11 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   silverKey: 0
   goldenKey: 0
+  spawnPoint: {fileID: 0}
+  patrolEnemies: []
+  patrolEnemySpawnPoint: []
+  ghostEnemies: []
+  ghostEnemySpawnPoint: []
 --- !u!4 &1595507678
 Transform:
   m_ObjectHideFlags: 0
