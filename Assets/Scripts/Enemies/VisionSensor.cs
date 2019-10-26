@@ -8,7 +8,6 @@ public class VisionSensor : MonoBehaviour
 
     public float radiusVision = 2f;
     [Range(0, 360)] public float angleVision = 90f;
-    public Rigidbody2D rigidbody;
 
     public LayerMask obstacleMask;
 

@@ -12,8 +12,8 @@ public class SearchPlayerAction : AI_Action
 
     private void SearchPlayer(StateController controller)
     {
-        controller.Wait();
         controller.unit.target = controller.unit.transform;
+        controller.Wait();
     }
 }
 
