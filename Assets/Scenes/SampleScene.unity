@@ -321,7 +321,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.378312
+  orthographic size: 4.72
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -363,13 +363,14 @@ GameObject:
   - component: {fileID: 812423816}
   - component: {fileID: 812423818}
   - component: {fileID: 812423815}
+  - component: {fileID: 812423819}
   m_Layer: 0
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &812423815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee89323dd35f1dc41bfa9d3aaa4faf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 20
+  maxSpeed: 10
   maxForce: 15
   target: {fileID: 1902247956}
   stoppingDistance: 1
@@ -424,7 +425,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 6901580864425905586, guid: 373accbea48ffcf46ab5c1a586ca3404,
+  m_Sprite: {fileID: 6796477179718848398, guid: 591c1a1d2ceea0b4eaabe882081d32b0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -444,7 +445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812423814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9005547, y: 2.1101959, z: -3.656725}
+  m_LocalPosition: {x: 3.95, y: 3.05, z: -3.656725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -471,6 +472,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &812423819
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812423814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b67701f2a2bfb7b4688affd37da746bb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1058231786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,7 +3988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1659228097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,7 +4176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusVision: 4
   angleVision: 90
-  rigidbody: {fileID: 0}
   obstacleMask:
     serializedVersion: 2
     m_Bits: 256
