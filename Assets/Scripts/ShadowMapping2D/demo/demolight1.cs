@@ -28,9 +28,4 @@ public class demolight1 : GameLight
 
         base.Start();
     }
-	
-	// Update is called once per frame
-	void FixedUpdate ()
-    {
-    }
 }

@@ -7,7 +7,9 @@ public class Fantasma : Vehicle
     [Min(0)] public float stoppingDistance;
 
     private bool facingLeft = false;
-    private bool awake = false;
+    public bool awake = false;
+    
+    public GameManager manager;
 
     Animator myAnimator;
 
@@ -39,9 +41,21 @@ public class Fantasma : Vehicle
                 }
             }
         }
+        else
+        {
+            rigidbody.AddForce(Seek(transform.position), ForceMode2D.Force);
+        }
 
         myAnimator.SetBool("Awake", awake);
 
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            manager.ResetLevel();
+        }
     }
 
     protected override Vector2 Seek(Vector3 targetPosition)

@@ -12,8 +12,10 @@ public class GameManager : MonoBehaviour
 
     public Transform spawnPoint;
     
-    public List<GameObject> enemies;
-    public List<Transform> enemySpawnPoint;
+    public List<GameObject> patrolEnemies;
+    public List<Transform> patrolEnemySpawnPoint;
+    public List<GameObject> ghostEnemies;
+    public List<Transform> ghostEnemySpawnPoint;
 
     public static GameManager Instance { get; private set; }
 
@@ -28,9 +30,13 @@ public class GameManager : MonoBehaviour
     public void ResetLevel()
     {
         playerTransform.position = spawnPoint.position;
-        for (int i = 0; i < enemies.Count; i++)
+        for (int i = 0; i < patrolEnemies.Count; i++)
         {
-            enemies[i].transform.position = enemySpawnPoint[i].position;
+            patrolEnemies[i].transform.position = patrolEnemySpawnPoint[i].position;
+        }
+        for (int i = 0; i < ghostEnemies.Count; i++)
+        {
+            ghostEnemies[i].transform.position = ghostEnemySpawnPoint[i].position;
         }
     }
 

@@ -8,12 +8,12 @@ public class GameLight : ShadowCaster
 {
 
     public Color        mColour;
-    private float       mAngle = 0;
-    private float       mSpread = 360;
+    protected float       mAngle = 0;
+    protected float       mSpread = 360;
     public float        mFalloffExponent = 1.0f;
     public float        mAngleFalloffExponent = 1.0f;
 	public float 		mFullBrightRadius = 0.0f;
-    private float       mRadius = 0.0f;
+    protected float       mRadius = 0.0f;
 
     public float Angle
     {
