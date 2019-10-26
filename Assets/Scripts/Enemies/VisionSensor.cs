@@ -12,6 +12,16 @@ public class VisionSensor : MonoBehaviour
     private float angleOffSet = 90f;
 
     public LayerMask obstacleMask;
+    public List<LayerMask> layerMasks;
+
+    private void Awake()
+    {
+        if (layerMasks.Count != 0)
+            foreach (var item in layerMasks)
+            {
+                obstacleMask.value |= item.value;
+            }
+    }
 
     public bool IsTargetVisible(Transform target)
     {
