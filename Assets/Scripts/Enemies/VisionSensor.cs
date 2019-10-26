@@ -9,12 +9,9 @@ public class VisionSensor : MonoBehaviour
     public float radiusVision = 2f;
     [Range(0, 360)] public float angleVision = 90f;
 
-    public LayerMask obstacleMask;
+    private float angleOffSet = 90f;
 
-    public void UpdateLayerMask(LayerMask layer)
-    {
-        obstacleMask.value |= layer.value;
-    }
+    public LayerMask obstacleMask;
 
     public bool IsTargetVisible(Transform target)
     {
@@ -47,7 +44,7 @@ public class VisionSensor : MonoBehaviour
     {
         if (!angleIsGlobal)
         {
-            angleInDegrees -= transform.eulerAngles.z - angleVision;
+            angleInDegrees -= transform.eulerAngles.z - angleOffSet;
         }
 
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), Mathf.Cos(angleInDegrees * Mathf.Deg2Rad), 0);
