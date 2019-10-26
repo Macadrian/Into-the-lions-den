@@ -12,6 +12,8 @@ public class Unit : MonoBehaviour
     public float turnSpeed = 2.5f;
     public float turnDst = 5;
 
+    private bool facingLeft = false;
+
     int targetIndex;
     Vector3[] path;
 
@@ -84,6 +86,19 @@ public class Unit : MonoBehaviour
             }
 
             transform.position = Vector3.MoveTowards(transform.position, currentWayPoint, speed * Time.deltaTime);
+
+            if (facingLeft && transform.position.x < currentWayPoint.x)
+            {
+                Flip();
+            }
+            else
+            {
+                if (!facingLeft && transform.position.x > currentWayPoint.x)
+                {
+                    Flip();
+                }
+            }
+
             yield return null;
         }
     }
@@ -259,5 +274,13 @@ public class Unit : MonoBehaviour
         {
             //path.DrawWithGizmos();
         }
+    }
+
+    private void Flip()
+    {
+        facingLeft = !facingLeft;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }

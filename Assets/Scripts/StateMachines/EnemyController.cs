@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
     public GameObject excalmation;
     public GameObject interrogation;
 
+    private Animator myAnimator;
+
     [Header("Patrol points")]
     public List<Transform> wayPointList;
 
@@ -18,17 +20,28 @@ public class EnemyController : MonoBehaviour
     {
         stateControler = GetComponent<StateController>();
         stateControler.SetupAI(true, wayPointList);
+        myAnimator = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        if (stateControler.currentState.name == "PatrolAction")
+        {
+            myAnimator.SetBool("walking", true);
+        }
+
         if (stateControler.currentState.name == "FollowPlayer")
+        {
             excalmation.SetActive(true);
+            myAnimator.SetBool("walking", true);
+        }
         else
             excalmation.SetActive(false);
 
-        if (stateControler.currentState.name == "WaitingState")
+        if (stateControler.currentState.name == "WaitingState") {
             interrogation.SetActive(true);
+            myAnimator.SetBool("walking", false);
+        }
         else
             interrogation.SetActive(false);
     }

@@ -11532,6 +11532,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 1764073186862814578, guid: 3d1b5b2cc300cc746b6cc46d873caa81,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1764073186862814589, guid: 3d1b5b2cc300cc746b6cc46d873caa81,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22992,6 +22997,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5800537716343696963}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &951569186
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951569185}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 095eb8d086765a14b9ddb826b90a82b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &951569192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5800537717055456135, guid: 823f963a222a7774cbd82f235e71de14,
