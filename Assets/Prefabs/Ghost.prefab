@@ -13,11 +13,10 @@ GameObject:
   - component: {fileID: 1764073186862814590}
   - component: {fileID: 1764073186862814579}
   - component: {fileID: 1764073186862814591}
-  - component: {fileID: 1806106950}
   - component: {fileID: 4770829672506322247}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,24 +143,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1806106950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764073186862814578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf489276b9e3814e876bcb7c4885eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shadowMapSlot: -1
-  mColour: {r: 0, g: 0, b: 0, a: 0}
-  mFalloffExponent: 1
-  mAngleFalloffExponent: 1
-  mFullBrightRadius: 0
-  mVel: {x: 0, y: 0, z: 0}
 --- !u!70 &4770829672506322247
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -172,7 +153,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.115594536, y: 0}
