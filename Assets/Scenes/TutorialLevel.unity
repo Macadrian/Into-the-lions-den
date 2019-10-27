@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 32633425}
   m_Layer: 0
-  m_Name: '------- GAMEMANAGER -------'
+  m_Name: '------- GAMEMANAGER ------- '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66979,15 +66979,15 @@ PrefabInstance:
       propertyPath: grass
       value: 
       objectReference: {fileID: 1744515601}
-    - target: {fileID: 5800537717055456129, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5800537717055456130, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 2046272581}
+    - target: {fileID: 5800537717055456129, guid: 823f963a222a7774cbd82f235e71de14,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 823f963a222a7774cbd82f235e71de14, type: 3}
