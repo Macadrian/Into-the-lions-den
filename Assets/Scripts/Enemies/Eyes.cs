@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Eyes : MonoBehaviour
 {
-    VisionSensor myVision;
+    public GameObject myVision;
+    VisionSensor vision;
+
+    public grassTiles grassTiles;
+
     Animator myAnimator;
     public GameObject target;
-    GameManager manager;
+    public GameManager manager;
 
     private int estado;
-
 
 
     // Start is called before the first frame update
@@ -19,8 +22,8 @@ public class Eyes : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         estado = 0;
         InvokeRepeating("changeState", 4, 3);
-        myVision = GetComponent<VisionSensor>();
-
+        vision = GetComponentInChildren<VisionSensor>();
+        grassTiles.GetComponent<grassTiles>();
     }
 
     // Update is called once per frame
@@ -30,15 +33,13 @@ public class Eyes : MonoBehaviour
 
         if (estado == 3)
         {
-            myVision.enabled = false;
-            Debug.Log("VisionSensor off");
+            myVision.SetActive(false);
         }
         else {
-            myVision.enabled = true;
-            Debug.Log("VisionSensor on");
+            myVision.SetActive(true);
         }
 
-        if (myVision.IsTargetVisible(target.transform))
+        if (vision.IsTargetVisible(target.transform) && myVision.active && !grassTiles.playerHided)
         {
             awakePhantoms();
         }
@@ -59,10 +60,10 @@ public class Eyes : MonoBehaviour
     }
 
     private void awakePhantoms() {
-        manager.awakePhantomes = true;
+        manager.awakeGhosts = true;
     }
 
     private void toSleepPhantomes() {
-        manager.awakePhantomes = false;
+        manager.awakeGhosts = false;
     }
 }

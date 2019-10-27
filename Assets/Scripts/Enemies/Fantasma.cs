@@ -28,7 +28,7 @@ public class Fantasma : Vehicle
     // Update is called once per frame
     void Update()
     {
-        awake = manager.awakePhantomes;
+        awake = manager.awakeGhosts;
 
         if (awake) {
             collider.enabled = true; ;

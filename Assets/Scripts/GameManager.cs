@@ -16,8 +16,10 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> patrolEnemies;
     public List<Transform> patrolEnemySpawnPoint;
+
     public List<GameObject> ghostEnemies;
     public List<Transform> ghostEnemySpawnPoint;
+    public bool awakeGhosts;
 
     public GameObject pauseCanvas;
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            awakeGhosts = false;
         }
     }
 
