@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
+    [HideInInspector] public float frictionInMudPercentage = 0f;
     public GameObject action_btn;
     public List <GameObject> bloodStains;
     private GameManager gameManager;
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0f, 1.0f);
         movementDirection.Normalize();
 
-        rigidbody2D.velocity = movementDirection * speed;
+        rigidbody2D.velocity = movementDirection * (speed - speed * frictionInMudPercentage);
 
         gameManager.playerTransform = transform;
 
