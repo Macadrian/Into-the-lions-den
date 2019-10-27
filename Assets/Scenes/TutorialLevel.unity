@@ -23705,7 +23705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765014929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.8, y: 22.4, z: -10}
+  m_LocalPosition: {x: -27.07, y: 21.09, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1539857968}
@@ -24116,7 +24116,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2046272581}
     - target: {fileID: 7748103647159069047, guid: 9723b30d771343b458aba150b2801214,
         type: 3}
       propertyPath: occluders
@@ -45385,6 +45385,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1,
         type: 2}
+    - target: {fileID: 5800537717055456130, guid: 823f963a222a7774cbd82f235e71de14,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2046272581}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 823f963a222a7774cbd82f235e71de14, type: 3}
 --- !u!1 &1462160842
@@ -45596,7 +45601,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 2046272581}
   m_Lens:
     FieldOfView: 71
     OrthographicSize: 10
@@ -47522,6 +47527,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004002323}
   m_CullTransparentMesh: 0
+--- !u!4 &2046272581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6079375412100745779, guid: 9b52e0ca3633a77488ff4c778515789c,
+    type: 3}
+  m_PrefabInstance: {fileID: 604153992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2046469635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7058393114707746410, guid: 154268882d5da9e4b9f1821351f22249,
@@ -66982,11 +66993,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemigoBase1
       objectReference: {fileID: 0}
-    - target: {fileID: 5800537717055456253, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: m_TagString
-      value: BaseEnemy
-      objectReference: {fileID: 0}
     - target: {fileID: 5800537717055456135, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67067,11 +67073,15 @@ PrefabInstance:
       propertyPath: grass
       value: 
       objectReference: {fileID: 1744515601}
-    - target: {fileID: 5800537717055456134, guid: 823f963a222a7774cbd82f235e71de14,
+    - target: {fileID: 5800537717055456129, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
-      propertyPath: remainState
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800537717055456130, guid: 823f963a222a7774cbd82f235e71de14,
+        type: 3}
+      propertyPath: target
       value: 
-      objectReference: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1,
-        type: 2}
+      objectReference: {fileID: 2046272581}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 823f963a222a7774cbd82f235e71de14, type: 3}

@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 8556710298107070815}
   m_Layer: 0
   m_Name: EnemigoBase
-  m_TagString: Untagged
+  m_TagString: BaseEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,6 +284,7 @@ MonoBehaviour:
   speed: 3
   turnSpeed: 2.5
   turnDst: 1
+  followingPath: 0
   currentPath: 0
   jugadorAlcanzado: 0
 --- !u!114 &5800537717055456131
@@ -318,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: {fileID: 11400000, guid: 468fcf3ee341a92438423504765cea01, type: 2}
-  remainState: {fileID: 0}
+  remainState: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1, type: 2}
   gameManager: {fileID: 0}
   vision: {fileID: 0}
   unit: {fileID: 0}
@@ -414,3 +415,4 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 256
+  layerMasks: []

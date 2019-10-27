@@ -42616,11 +42616,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemigoBase1
       objectReference: {fileID: 0}
-    - target: {fileID: 5800537717055456253, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: m_TagString
-      value: BaseEnemy
-      objectReference: {fileID: 0}
     - target: {fileID: 5800537717055456135, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42701,12 +42696,6 @@ PrefabInstance:
       propertyPath: grass
       value: 
       objectReference: {fileID: 897503990}
-    - target: {fileID: 5800537717055456134, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: remainState
-      value: 
-      objectReference: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 823f963a222a7774cbd82f235e71de14, type: 3}
 --- !u!4 &1382552575 stripped
