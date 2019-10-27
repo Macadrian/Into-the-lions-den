@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 5ef84ed60bd2c77428c358c2785cd941
   - enabled: 1
-    path: Assets/Scenes/DuneonPrueba.unity
+    path: Assets/Scenes/TutorialLevel.unity
     guid: 4a139e783f0ff464080eb0810fa4cafe
   m_configObjects: {}
