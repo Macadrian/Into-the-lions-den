@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject pauseCanvas;
 
+    public GameObject controlsCanvas;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -188,6 +190,7 @@ public class GameManager : MonoBehaviour
         ResumeGameFromDialogs();
 
         pauseCanvas.SetActive(false);
+        controlsCanvas.SetActive(false);
     }
 }
 
