@@ -34,6 +34,7 @@ public class door : MonoBehaviour
             {
                 spriteRenderer.sprite = spriteOpen;
                 manager.goldenKey = false;
+                manager.CambiarEscena();
             }
             
         }
