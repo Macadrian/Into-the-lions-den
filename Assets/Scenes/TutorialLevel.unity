@@ -301,6 +301,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_IsActive
@@ -780,6 +785,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea0ca2adcc58e94a8c593ddd4421ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &214329979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2943029667735195929, guid: 9b52e0ca3633a77488ff4c778515789c,
+    type: 3}
+  m_PrefabInstance: {fileID: 604153992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c40cc69537d244409e6316fa55331d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &250848565
@@ -23880,7 +23897,7 @@ MonoBehaviour:
   animatorFunctions: {fileID: 838958762}
   thisIndex: 3
   manager: {fileID: 682312492}
-  otherMenu: {fileID: 0}
+  otherMenu: {fileID: 2004002323}
   selfMenu: {fileID: 1287264511}
 --- !u!95 &838958764 stripped
 Animator:
@@ -24182,6 +24199,11 @@ PrefabInstance:
       propertyPath: pauseCanvas
       value: 
       objectReference: {fileID: 2004002323}
+    - target: {fileID: 7748103647159069047, guid: 9723b30d771343b458aba150b2801214,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 214329979}
     - target: {fileID: 7748103647159069000, guid: 9723b30d771343b458aba150b2801214,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25361,7 +25383,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5ae1654b7263ac148a071091bed72aa8, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -44261,10 +44283,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fd4dd971389b640ad9f0a9e99f8106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 2
+  index: 3
   keyDown: 0
+  startIndex: 3
   maxIndex: 3
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1287264512}
 --- !u!114 &1287264514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44459,6 +44482,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_IsActive
@@ -45129,6 +45157,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_IsActive
@@ -47408,6 +47441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 1
   keyDown: 0
+  startIndex: 1
   maxIndex: 2
   audioSource: {fileID: 2004002324}
 --- !u!114 &2004002326

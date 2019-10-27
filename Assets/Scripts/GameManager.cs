@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
     public bool goldenKey = false;
 
     public Transform spawnPoint;
-    
+
+    public PlayerMovement player;
+
     public List<GameObject> patrolEnemies;
     public List<Transform> patrolEnemySpawnPoint;
     public List<GameObject> ghostEnemies;
@@ -31,14 +33,17 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        /* No funciona el menú de pausa
-        
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseGame();
+            if (player.canMove == true)
+            {
+                PauseGame();
+            }
+            else
+            {
+                ResumeGame();
+            }
         }
-
-        */
     }
 
     public void ResetLevel()
@@ -86,7 +91,7 @@ public class GameManager : MonoBehaviour
 
         // Simple 1:1 index buffer
         int[] indices = new int[vertices.Count];
-        for(int i = 0; i < vertices.Count; i++)
+        for (int i = 0; i < vertices.Count; i++)
         {
             indices[i] = i;
         }
@@ -101,6 +106,8 @@ public class GameManager : MonoBehaviour
 
     public void PauseGameForDialogs()
     {
+        player.canMove = false;
+        
         Time.timeScale = 0f;
 
         //Disable the scripts and object that continue
@@ -136,12 +143,15 @@ public class GameManager : MonoBehaviour
     {
         PauseGameForDialogs();
 
+        Time.timeScale = 1f;
+
         //Enable panel for pause menu
         pauseCanvas.SetActive(true);
     }   
 
     public void ResumeGameFromDialogs()
     {
+        player.canMove = true;
         Time.timeScale = 1f;
 
         //Enable the scripts and object that continue
@@ -180,3 +190,4 @@ public class GameManager : MonoBehaviour
         pauseCanvas.SetActive(false);
     }
 }
+

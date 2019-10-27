@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2D;
     private Animator myAnimator;
 
+    public bool canMove = true;
+
     private Vector2 movementDirection;
     private bool facingRight = true;
 
@@ -32,17 +34,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        movementDirection.x = Input.GetAxis("Horizontal");
-        movementDirection.y = Input.GetAxis("Vertical");
-        movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0f, 1.0f);
-        movementDirection.Normalize();
+        if(canMove)
+        {
+            movementDirection.x = Input.GetAxis("Horizontal");
+            movementDirection.y = Input.GetAxis("Vertical");
+            movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0f, 1.0f);
+            movementDirection.Normalize();
 
-        rigidbody2D.velocity = movementDirection * (speed - speed * frictionInMudPercentage);
+            rigidbody2D.velocity = movementDirection * (speed - speed * frictionInMudPercentage);
 
-        gameManager.playerTransform = transform;
+            gameManager.playerTransform = transform;
 
-        setAnimations();
-
+            setAnimations();
+        }
     }
 
     private void setAnimations() {
