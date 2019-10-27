@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetLevel()
     {
-        playerTransform.position = spawnPoint.position;
+        playerTransform.gameObject.GetComponent<PlayerMovement>().Reset(spawnPoint.position);
         for (int i = 0; i < patrolEnemies.Count; i++)
         {
             patrolEnemies[i].transform.position = patrolEnemySpawnPoint[i].position;

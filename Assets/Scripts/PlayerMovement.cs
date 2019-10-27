@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public GameObject action_btn;
+    public GameObject blood;
     private GameManager gameManager;
 
     Rigidbody2D rigidbody2D;
@@ -71,5 +72,15 @@ public class PlayerMovement : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    public void Reset(Vector3 position)
+    {
+        if (blood != null)
+        {
+            Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 359));
+            Instantiate(blood, transform.position, rotation);
+        }
+        transform.position = position;
     }
 }

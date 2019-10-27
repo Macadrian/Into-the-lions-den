@@ -24,13 +24,12 @@ public class Unit : MonoBehaviour
 
     public bool currentPath;
 
-    public bool jugadorAlcanzado;
+    public bool jugadorAlcanzado = false;
 
     void Start()
     {
         rotation = Quaternion.identity;
         currentPath = false;
-        jugadorAlcanzado = false;
         StartCoroutine(UpdatePath());
     }
 
