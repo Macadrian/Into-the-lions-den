@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public GameObject action_btn;
-    public GameObject blood;
+    public List <GameObject> bloodStains;
     private GameManager gameManager;
 
     Rigidbody2D rigidbody2D;
@@ -76,10 +76,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Reset(Vector3 position)
     {
-        if (blood != null)
+        if (bloodStains != null)
         {
-            Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 359));
-            Instantiate(blood, transform.position, rotation);
+            Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+            int stainIndex = Random.Range(0, bloodStains.Count);
+            Instantiate(bloodStains[stainIndex], transform.position, rotation);
         }
         transform.position = position;
     }

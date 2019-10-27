@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 706205844278471098}
   - component: {fileID: 3693711289669440819}
   m_Layer: 0
-  m_Name: FreshBlood (1)
+  m_Name: FreshBlood-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: 21300000, guid: 58dd5c559f7ff664c9a411c6b0b4c4f8, type: 3}
+  m_Sprite: {fileID: 5108953279840033047, guid: 58dd5c559f7ff664c9a411c6b0b4c4f8,
+    type: 3}
   m_Color: {r: 0.8396226, g: 0.10693307, b: 0.10693307, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -169,7 +170,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: 58dd5c559f7ff664c9a411c6b0b4c4f8, type: 3}
+  m_Sprite: {fileID: 5108953279840033047, guid: 58dd5c559f7ff664c9a411c6b0b4c4f8,
+    type: 3}
   m_Color: {r: 0.4811321, g: 0.14297792, b: 0.14297792, a: 1}
   m_FlipX: 0
   m_FlipY: 0
