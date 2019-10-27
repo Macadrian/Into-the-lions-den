@@ -64,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (movementDirection.x == 0 && movementDirection.y == 0) {
             myAnimator.SetBool("Walking", false);
+
+            AudioManager audioManager = FindObjectOfType<AudioManager>();
+            if (audioManager != null) {
+                audioManager.Play("PlayerFootsteps");
+            }
         }
         else
         {
