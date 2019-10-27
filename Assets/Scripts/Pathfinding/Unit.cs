@@ -18,9 +18,7 @@ public class Unit : MonoBehaviour
     int targetIndex;
     Vector3[] path;
 
-    Quaternion rotation;
-
-    public VisionSensor vision;
+    public GameObject vision;
 
     public bool currentPath;
 
@@ -28,8 +26,6 @@ public class Unit : MonoBehaviour
 
     void Start()
     {
-        vision = GetComponentInChildren<VisionSensor>();
-        rotation = Quaternion.identity;
         currentPath = false;
         StartCoroutine(UpdatePath());
     }
@@ -38,7 +34,6 @@ public class Unit : MonoBehaviour
     {
         if (pathSuccessful)
         {
-            //path = new Path(waypoints, transform.position, turnDst);
             path = waypoints;
             targetIndex = 0;
             StopCoroutine("FollowPath");
@@ -118,7 +113,8 @@ public class Unit : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
-        //vision.angleVision *= -1;
+        Vector3 rotation = new Vector3(0, 0, 180);
+        vision.transform.Rotate(rotation, Space.Self);
     }
 
     /*IEnumerator FollowPath()
