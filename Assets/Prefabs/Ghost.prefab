@@ -123,7 +123,7 @@ MonoBehaviour:
   maxForce: 15
   target: {fileID: 0}
   stoppingDistance: 1
-  awake: 1
+  awake: 0
   manager: {fileID: 0}
 --- !u!95 &1764073186862814591
 Animator:

@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: fef1e68fe23fdd44788fad7695ac8daa
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4733217950673837704
+    second: SpriteSheetOjo_0
+  - first:
+      213: 7167000716908002599
+    second: SpriteSheetOjo_1
+  - first:
+      213: 9210769668890959015
+    second: SpriteSheetOjo_2
+  - first:
+      213: 1082315471822354528
+    second: SpriteSheetOjo_3
+  - first:
+      213: 9218329099240550997
+    second: SpriteSheetOjo_4
+  - first:
+      213: 2888205993663301449
+    second: SpriteSheetOjo_5
+  - first:
+      213: -6648820499767020374
+    second: SpriteSheetOjo_6
+  - first:
+      213: -1329446199507998741
+    second: SpriteSheetOjo_7
+  - first:
+      213: 3278873206932874742
+    second: SpriteSheetOjo_8
+  - first:
+      213: -4168571901904669640
+    second: SpriteSheetOjo_9
+  - first:
+      213: -8765578510367018385
+    second: SpriteSheetOjo_10
+  - first:
+      213: -4565307664725283697
+    second: SpriteSheetOjo_11
+  - first:
+      213: 359302442134725904
+    second: SpriteSheetOjo_12
+  - first:
+      213: -6522558529211695977
+    second: SpriteSheetOjo_13
+  - first:
+      213: -5968312631442306930
+    second: SpriteSheetOjo_14
+  - first:
+      213: -5639440791865728803
+    second: SpriteSheetOjo_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +88,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +144,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheetOjo_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4246ad36ac9b7d4e9826afc6f957876
+      internalID: 4733217950673837704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 72
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98635f4ccc993c84dba624dec05e84ab
+      internalID: 7167000716908002599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 72
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ef32e041afa504aa939021205bae97
+      internalID: 9210769668890959015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa231e2751d869e4d8370b6aba563a17
+      internalID: 1082315471822354528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 47
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c3ba442ecceb94ea5950c1d2b68534
+      internalID: 9218329099240550997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 47
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792fd24366789f84ab5609d927eb3dc3
+      internalID: 2888205993663301449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 47
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5029b729c4db34295f8bac5207b234
+      internalID: -6648820499767020374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 47
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799ae67ba7ae04b428cbf4a44a73f323
+      internalID: -1329446199507998741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 26
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e16989f6e059b4aa9c31690b5f278f
+      internalID: 3278873206932874742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 26
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb05651bb3532c54fbe905b4498c25f4
+      internalID: -4168571901904669640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 26
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1135b882e320e64ca5354ee6035ccfb
+      internalID: -8765578510367018385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 26
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998a20d960c4a284d8bd6e59b6946bd6
+      internalID: -4565307664725283697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116e58afa734d1b48bfe228f55f0b682
+      internalID: 359302442134725904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa878aa92769e240bdc331470f05abd
+      internalID: -6522558529211695977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_14
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1402a2846c04e264680cd7f0de472479
+      internalID: -5968312631442306930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheetOjo_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 6
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccccb5a3eb3cd5c4da028fdacbce765e
+      internalID: -5639440791865728803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

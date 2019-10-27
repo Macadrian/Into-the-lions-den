@@ -9,19 +9,9 @@ public class VisionSensor : MonoBehaviour
     public float radiusVision = 2f;
     [Range(0, 360)] public float angleVision = 90f;
 
-    private float angleOffSet = 90f;
+    public float angleOffSet = 90f;
 
     public LayerMask obstacleMask;
-    public List<LayerMask> layerMasks;
-
-    private void Awake()
-    {
-        if (layerMasks.Count != 0)
-            foreach (var item in layerMasks)
-            {
-                obstacleMask.value |= item.value;
-            }
-    }
 
     public bool IsTargetVisible(Transform target)
     {

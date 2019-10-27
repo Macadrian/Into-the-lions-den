@@ -14,11 +14,13 @@ public class Fantasma : Vehicle
     Animator myAnimator;
 
     private Rigidbody2D targetRigidBody;
+    private Collider2D collider;
 
     protected override void Awake()
     {
         base.Awake();
         targetRigidBody = target.GetComponent<Rigidbody2D>();
+        collider = GetComponent<Collider2D>();
         myAnimator = GetComponent<Animator>();
         myAnimator.SetBool("Awake", true);
     }
@@ -27,6 +29,7 @@ public class Fantasma : Vehicle
     void Update()
     {
         if (awake) {
+            collider.enabled = true; ;
             rigidbody.AddForce(Seek(target.transform.position), ForceMode2D.Force);
 
             if (facingLeft && transform.position.x < targetRigidBody.transform.position.x)
@@ -43,7 +46,9 @@ public class Fantasma : Vehicle
         }
         else
         {
+            collider.enabled = false;
             rigidbody.AddForce(Seek(transform.position), ForceMode2D.Force);
+           
         }
 
         myAnimator.SetBool("Awake", awake);

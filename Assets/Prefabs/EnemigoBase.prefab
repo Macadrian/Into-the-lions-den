@@ -285,6 +285,7 @@ MonoBehaviour:
   turnSpeed: 2.5
   turnDst: 1
   followingPath: 0
+  vision: {fileID: 0}
   currentPath: 0
   jugadorAlcanzado: 0
 --- !u!114 &5800537717055456131
@@ -323,6 +324,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   vision: {fileID: 0}
   unit: {fileID: 0}
+  collider: {fileID: 0}
   playerTransform: {fileID: 0}
   wayPointList: []
   nextWayPoint: 0
@@ -412,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusVision: 7
   angleVision: 360
+  angleOffSet: 90
   obstacleMask:
     serializedVersion: 2
     m_Bits: 256
-  layerMasks: []

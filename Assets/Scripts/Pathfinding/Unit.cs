@@ -20,7 +20,7 @@ public class Unit : MonoBehaviour
 
     Quaternion rotation;
 
-    //Path path;
+    public VisionSensor vision;
 
     public bool currentPath;
 
@@ -28,6 +28,7 @@ public class Unit : MonoBehaviour
 
     void Start()
     {
+        vision = GetComponentInChildren<VisionSensor>();
         rotation = Quaternion.identity;
         currentPath = false;
         StartCoroutine(UpdatePath());
@@ -117,6 +118,7 @@ public class Unit : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+        //vision.angleVision *= -1;
     }
 
     /*IEnumerator FollowPath()

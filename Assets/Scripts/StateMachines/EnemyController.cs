@@ -25,7 +25,6 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(stateControler.currentState.name);
         if (stateControler.currentState.name == "Patrullar")
         {
             myAnimator.SetBool("walking", true);

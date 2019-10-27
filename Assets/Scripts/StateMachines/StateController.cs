@@ -11,6 +11,7 @@ public class StateController : MonoBehaviour
     [HideInInspector] public VisionSensor vision;
 
     [HideInInspector] public Unit unit;
+    [HideInInspector] private Collider2D collider;
 
     [HideInInspector] public Transform playerTransform;
 
@@ -29,6 +30,7 @@ public class StateController : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         vision = GetComponentInChildren<VisionSensor>();
+        collider = GetComponent<Collider2D>();
         unit = GetComponent<Unit>();
         playerTransform = gameManager.playerTransform;
 
@@ -46,7 +48,10 @@ public class StateController : MonoBehaviour
         if (!aiActive)
             return;
         currentState.UpdateState(this);
-        Debug.Log(currentState);
+
+        if (currentState.name != "FollowPlayer") collider.enabled = false;
+        else collider.enabled = true;
+
         if (wait)
         {
             timeWaited += Time.deltaTime;
