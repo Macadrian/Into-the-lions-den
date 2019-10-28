@@ -22,6 +22,7 @@ public class keys : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("PickedUpObject");
             Debug.Log("El jugador ha cogido una llave dorada");
             manager.goldenKey = true;
             Destroy(me);

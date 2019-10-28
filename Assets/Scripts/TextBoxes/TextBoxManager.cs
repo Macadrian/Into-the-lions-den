@@ -52,6 +52,7 @@ public class TextBoxManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Return))
         {
+            FindObjectOfType<AudioManager>().Play("DialogAppearance");
             currentLine++;
         }
 

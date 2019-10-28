@@ -15,6 +15,8 @@ public class Sound
 
     public bool loop;
 
+    public bool playOnAwake = false;
+
     [Range(0f, 1f)]
     public float spatialBlend = 0f;
 

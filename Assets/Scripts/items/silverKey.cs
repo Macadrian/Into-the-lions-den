@@ -22,6 +22,7 @@ public class silverKey : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("PickedUpObject");
             Debug.Log("El jugador ha cogido una llave plateada");
             manager.silverKey = true;
             Destroy(me);

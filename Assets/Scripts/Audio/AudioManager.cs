@@ -29,6 +29,8 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
 
+            s.source.playOnAwake = s.playOnAwake;
+
             s.source.spatialBlend = s.spatialBlend;
         }
     }
@@ -47,5 +49,16 @@ public class AudioManager : MonoBehaviour
             return;
         }
         s.source.Play();
+    }
+
+    public void PlayDelayed (string name, float delay)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.PlayDelayed(delay);
     }
 }

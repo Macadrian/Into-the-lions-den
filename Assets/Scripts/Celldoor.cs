@@ -44,6 +44,8 @@ public class Celldoor : door
         {
             if (manager.silverKey)
             {
+                FindObjectOfType<AudioManager>().PlayDelayed("CellDoorUnlocked", -0.3f);
+                FindObjectOfType<AudioManager>().PlayDelayed("CellDoorOpening", 0.33f);
                 spriteRenderer.sprite = spriteOpen;
                 spriteRenderer.sprite = spriteOpen;
                 spriteRendererShadow.sprite = spriteOpenShadow;
@@ -51,6 +53,10 @@ public class Celldoor : door
                 collider2DFront.enabled = false;
                 collider2DUnder.enabled = false;
                 manager.silverKey = false;
+            }
+            else
+            {
+                FindObjectOfType<AudioManager>().Play("CellDoorLocked");
             }
 
 
