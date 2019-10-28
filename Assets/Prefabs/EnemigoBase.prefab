@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radiusVision: 7
-  angleVision: 140
+  angleVision: 360
   angleOffSet: 90
   obstacleMask:
     serializedVersion: 2
