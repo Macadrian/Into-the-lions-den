@@ -43998,11 +43998,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemigoBase2
       objectReference: {fileID: 0}
-    - target: {fileID: 5800537717055456253, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: m_TagString
-      value: BaseEnemy
-      objectReference: {fileID: 0}
     - target: {fileID: 5800537717055456135, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44060,11 +44055,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5800537717055456131, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
-      propertyPath: wayPointList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5800537717055456131, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
       propertyPath: wayPointList.Array.data[0]
       value: 
       objectReference: {fileID: 1901105911}
@@ -44083,42 +44073,11 @@ PrefabInstance:
       propertyPath: wayPointList.Array.data[3]
       value: 
       objectReference: {fileID: 386658375}
-    - target: {fileID: 5800537717055456131, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: wayPointList.Array.data[4]
-      value: 
-      objectReference: {fileID: 1901105911}
-    - target: {fileID: 5800537717055456131, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: wayPointList.Array.data[5]
-      value: 
-      objectReference: {fileID: 1918064344}
-    - target: {fileID: 5800537717055456131, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: wayPointList.Array.data[6]
-      value: 
-      objectReference: {fileID: 1331404020}
-    - target: {fileID: 5800537717055456131, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: wayPointList.Array.data[7]
-      value: 
-      objectReference: {fileID: 386658375}
     - target: {fileID: 5800537717055456134, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
       propertyPath: grass
       value: 
       objectReference: {fileID: 1744515601}
-    - target: {fileID: 5800537717055456134, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: remainState
-      value: 
-      objectReference: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1,
-        type: 2}
-    - target: {fileID: 5800537717378774406, guid: 823f963a222a7774cbd82f235e71de14,
-        type: 3}
-      propertyPath: angleVision
-      value: 140
-      objectReference: {fileID: 0}
     - target: {fileID: 5800537717055456130, guid: 823f963a222a7774cbd82f235e71de14,
         type: 3}
       propertyPath: target

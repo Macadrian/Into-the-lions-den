@@ -51,8 +51,6 @@ public class GameLight : ShadowCaster
 	{
         mRadius = Mathf.Max(transform.localScale.x, transform.localScale.y) * 0.5f;
 
-        transform.localScale = Vector3.one;
-
         //RebuildQuad();
     }
 
