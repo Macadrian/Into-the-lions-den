@@ -44,9 +44,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: PlayerFootsteps
-    clip: {fileID: 8300000, guid: 6544c41040573c14bb7b76beab3138f9, type: 3}
-    volume: 1
+  - name: MainTheme
+    clip: {fileID: 8300000, guid: ed15a5f6eee669142a92a516e583a592, type: 3}
+    volume: 0.035
     pitch: 1
     loop: 1
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: PlayerFootsteps
+    clip: {fileID: 8300000, guid: a02e47b49f3156e40ada3797f5a7a5b7, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: CellDoorLocked
+    clip: {fileID: 8300000, guid: e5c19d507c0c8a34cbe0f9d5801530c7, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: CellDoorUnlocked
+    clip: {fileID: 8300000, guid: eaa0b8e8de7ff2b43813bb1e400d3e5f, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: CellDoorOpening
+    clip: {fileID: 8300000, guid: 8f40c39221e884a4096b0f8a56958a08, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: PickedUpObject
+    clip: {fileID: 8300000, guid: b60d4d186119ff341ad674aea9bd8c6d, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: GrassMovement
+    clip: {fileID: 8300000, guid: ae0aff7c9d8e2c24b8e47bce7b0aab28, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    spatialBlend: 0
+    source: {fileID: 0}
+  - name: DialogAppearance
+    clip: {fileID: 8300000, guid: d077e62bf0bb5ae429f57fd90c9c9c9b, type: 3}
+    volume: 0.075
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    spatialBlend: 0
     source: {fileID: 0}

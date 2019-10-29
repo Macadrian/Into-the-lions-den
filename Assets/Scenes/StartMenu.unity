@@ -380,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   keyDown: 0
+  startIndex: 0
   maxIndex: 2
   audioSource: {fileID: 242571930}
 --- !u!82 &242571930
@@ -622,22 +623,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
-    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0
@@ -647,16 +648,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
     - target: {fileID: 8784146579397345420, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_Text
@@ -731,22 +732,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
-    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0
@@ -756,16 +757,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
     - target: {fileID: 8784146579397345420, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_Text
@@ -1476,10 +1477,14 @@ MonoBehaviour:
   silverKey: 0
   goldenKey: 0
   spawnPoint: {fileID: 0}
+  player: {fileID: 0}
   patrolEnemies: []
   patrolEnemySpawnPoint: []
   ghostEnemies: []
   ghostEnemySpawnPoint: []
+  awakeGhosts: 0
+  pauseCanvas: {fileID: 0}
+  controlsCanvas: {fileID: 0}
 --- !u!4 &1595507678
 Transform:
   m_ObjectHideFlags: 0
@@ -1765,6 +1770,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797802809}
   m_CullTransparentMesh: 0
+--- !u!1001 &1968914698
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4964261757461091409, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091415, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964261757461091408, guid: 0fdd6c25c6ac584438cf1e2571cd8936,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fdd6c25c6ac584438cf1e2571cd8936, type: 3}
 --- !u!1 &2052938772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,6 +1965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 2
   keyDown: 0
+  startIndex: 0
   maxIndex: 3
   audioSource: {fileID: 242571930}
 --- !u!82 &2052938778
@@ -2051,22 +2131,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
-    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0
@@ -2076,16 +2156,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
     - target: {fileID: 8784146579397345420, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_Text
@@ -2211,22 +2291,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
-    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4377112632186209086, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0
@@ -2236,16 +2316,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: 6171249606419739255, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8408421077055323409, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
+    - target: {fileID: -2938261273306624446, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a3632fa1b4c1159488f7021392700772, type: 2}
     - target: {fileID: 8784146579397345420, guid: 56ffc6d17147bf44bb16ebbdf5bc82e7,
         type: 3}
       propertyPath: m_Color.r
@@ -2288,7 +2368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButtonController: {fileID: 242571929}
-  disableOnce: 1
+  disableOnce: 0
 --- !u!114 &3838663482641272739
 MonoBehaviour:
   m_ObjectHideFlags: 0
