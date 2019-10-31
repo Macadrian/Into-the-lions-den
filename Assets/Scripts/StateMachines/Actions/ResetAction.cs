@@ -13,6 +13,6 @@ public class ResetAction : AI_Action
     private void ResetGame(StateController controller)
     {
         controller.gameManager.ResetLevel();
-        controller.unit.jugadorAlcanzado = false;
+        controller.enemyController.unit.jugadorAlcanzado = false;
     }
 }

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1491862c498dd64abd923ce1a9b785d, type: 3}
+  m_Name: Eye_Close
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: dced758855075744fa658291b3bd4f5a, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 8f811431c58f6ac4abe2ea8cbb69f0a7, type: 2}
+    trueState: {fileID: 11400000, guid: 61d2b68fb00cd074f82adf380cdd8ea6, type: 2}
+    falseState: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1, type: 2}
+  sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

@@ -7,6 +7,6 @@ public class JugadorAlcanzado : Decision
 {
     public override bool Decide(StateController controller)
     {
-        return controller.unit.jugadorAlcanzado;
+        return controller.enemyController.unit.jugadorAlcanzado;
     }
 }

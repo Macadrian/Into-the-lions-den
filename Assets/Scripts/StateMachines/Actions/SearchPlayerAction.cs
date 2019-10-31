@@ -12,8 +12,8 @@ public class SearchPlayerAction : AI_Action
 
     private void SearchPlayer(StateController controller)
     {
-        controller.unit.target = controller.unit.transform;
-        controller.wait = true;
+        controller.enemyController.unit.target = controller.enemyController.unit.transform;
+        controller.enemyController.wait = true;
     }
 }
 

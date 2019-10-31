@@ -12,7 +12,7 @@ public class FollowPlayerAction : AI_Action
 
     private void FollowPlayer(StateController controller)
     {
-        var unit = controller.unit;
+        var unit = controller.enemyController.unit;
         unit.target = controller.playerTransform;
     }
 }

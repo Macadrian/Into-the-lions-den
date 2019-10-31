@@ -400,6 +400,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afa7f0ef3050154cb661dfe11ed0243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unit: {fileID: 0}
+  nextWayPoint: 0
+  timeWaited: 0
+  waitTime: 0
+  wait: 0
   excalmation: {fileID: 2845509901480913499}
   interrogation: {fileID: 4059686350864401993}
   wayPointList:
@@ -421,15 +426,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: {fileID: 11400000, guid: 468fcf3ee341a92438423504765cea01, type: 2}
   remainState: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1, type: 2}
+  enemyController: {fileID: 5800537717055456131}
+  eyeController: {fileID: 0}
   gameManager: {fileID: 0}
   vision: {fileID: 0}
-  unit: {fileID: 0}
   playerTransform: {fileID: 0}
-  wayPointList: []
-  nextWayPoint: 0
-  timeWaited: 0
-  waitTime: 0
-  wait: 0
   grass: {fileID: 0}
 --- !u!114 &222345468670768523
 MonoBehaviour:

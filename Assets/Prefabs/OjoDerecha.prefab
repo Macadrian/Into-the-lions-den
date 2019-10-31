@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6627173955213444891}
   - component: {fileID: 6627173955213444890}
   - component: {fileID: 6627173955213444888}
-  - component: {fileID: 6627173955213444894}
   - component: {fileID: 6627173955213444889}
+  - component: {fileID: 6442450248856236724}
+  - component: {fileID: 8898382208098851650}
   m_Layer: 0
   m_Name: OjoDerecha
   m_TagString: Untagged
@@ -27,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6627173955213444884}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.31, y: -6.62, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6627173956795618773}
   m_Father: {fileID: 0}
@@ -103,22 +104,6 @@ MonoBehaviour:
   mAngleFalloffExponent: 1
   mFullBrightRadius: 0
   mVel: {x: 0, y: 0, z: 0}
---- !u!114 &6627173955213444894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6627173955213444884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb55176f51bd2264e8918da2089b2b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myVision: {fileID: 6627173956795618775}
-  grassTiles: {fileID: 0}
-  target: {fileID: 0}
-  manager: {fileID: 0}
 --- !u!95 &6627173955213444889
 Animator:
   serializedVersion: 3
@@ -138,6 +123,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6442450248856236724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627173955213444884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fdabb1a02c7ca4d93eef05cbc47b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myVision: {fileID: 6627173956795618775}
+--- !u!114 &8898382208098851650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627173955213444884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a671adb16df564c836f22c2a0029d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: {fileID: 11400000, guid: 61d2b68fb00cd074f82adf380cdd8ea6, type: 2}
+  remainState: {fileID: 11400000, guid: e6ad324d658873a4089d07ab8e6db7b1, type: 2}
+  enemyController: {fileID: 0}
+  eyeController: {fileID: 6442450248856236724}
+  gameManager: {fileID: 0}
+  vision: {fileID: 0}
+  playerTransform: {fileID: 0}
+  grass: {fileID: 0}
 --- !u!1 &6627173956795618775
 GameObject:
   m_ObjectHideFlags: 0

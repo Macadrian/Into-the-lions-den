@@ -7,10 +7,10 @@ public class TimeWaitedDecision : Decision
 {
     public override bool Decide(StateController controller)
     {
-        if (controller.timeWaited >= controller.waitTime || (controller.vision.IsTargetVisible(controller.playerTransform) && !controller.PlayerInGrass()))
+        if (controller.enemyController.timeWaited >= controller.enemyController.waitTime || (controller.vision.IsTargetVisible(controller.playerTransform) && !controller.PlayerInGrass()))
         {
-            controller.timeWaited = 0;
-            controller.wait = false;
+            controller.enemyController.timeWaited = 0;
+            controller.enemyController.wait = false;
             return true;
         }
         return false;

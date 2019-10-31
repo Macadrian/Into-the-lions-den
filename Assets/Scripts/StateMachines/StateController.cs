@@ -7,21 +7,14 @@ public class StateController : MonoBehaviour
     public State currentState;
     public State remainState;
 
-    [HideInInspector] public GameManager gameManager;
-    [HideInInspector] public VisionSensor vision;
+    public EnemyController enemyController;
+    public EyeController eyeController;
 
-    [HideInInspector] public Unit unit;
-    [HideInInspector] private Collider2D collider;
+    [HideInInspector] public GameManager gameManager;
+    [HideInInspector] public VisionSensor vision;  
 
     [HideInInspector] public Transform playerTransform;
-
-    [HideInInspector] public List<Transform> wayPointList;
-    [HideInInspector] public int nextWayPoint;  
     
-    [HideInInspector] public float timeWaited;
-    [HideInInspector] public float waitTime;
-    [HideInInspector] public bool wait;
-
     public GameObject grass;
 
     private bool aiActive;
@@ -30,16 +23,11 @@ public class StateController : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         vision = GetComponentInChildren<VisionSensor>();
-        collider = GetComponent<Collider2D>();
-        unit = GetComponent<Unit>();
         playerTransform = gameManager.playerTransform;
-
-        waitTime = 2f;
     }
 
     public void SetupAI(bool aiActivationFromEnemyController, List<Transform> wayPointsFromEnmeyController)
     {
-        wayPointList = wayPointsFromEnmeyController;
         aiActive = aiActivationFromEnemyController;
     }
 
@@ -48,14 +36,6 @@ public class StateController : MonoBehaviour
         if (!aiActive)
             return;
         currentState.UpdateState(this);
-
-        if (currentState.name != "FollowPlayer") collider.enabled = false;
-        else collider.enabled = true;
-
-        if (wait)
-        {
-            timeWaited += Time.deltaTime;
-        }
     }
 
     public void TransitionToState(State nextState)
