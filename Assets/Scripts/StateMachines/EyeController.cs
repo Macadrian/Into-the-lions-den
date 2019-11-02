@@ -18,11 +18,14 @@ public class EyeController : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         estado = 0;
         InvokeRepeating("changeState", 4, 3);
+
+        stateControler.SetupAI(true);
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(stateControler.currentState);
         myAnimator.SetInteger("Estado", estado);
 
         if (estado == 3)

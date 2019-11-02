@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
 
         waitTime = 2f;
 
-        stateControler.SetupAI(true, wayPointList);
+        stateControler.SetupAI(true);
         myAnimator = GetComponent<Animator>();
     }
 

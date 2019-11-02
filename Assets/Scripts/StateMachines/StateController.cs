@@ -26,7 +26,7 @@ public class StateController : MonoBehaviour
         playerTransform = gameManager.playerTransform;
     }
 
-    public void SetupAI(bool aiActivationFromEnemyController, List<Transform> wayPointsFromEnmeyController)
+    public void SetupAI(bool aiActivationFromEnemyController)
     {
         aiActive = aiActivationFromEnemyController;
     }

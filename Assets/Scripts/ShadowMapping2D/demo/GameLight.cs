@@ -103,8 +103,6 @@ public class GameLight : ShadowCaster
 
         Vector3 position = GameManager.Instance.playerTransform.position;
 
-        Debug.Log(transform.position);
-
         materialPropertyBlock.SetVector("_LightPosition", new Vector4(position.x, position.y, mAngle * Mathf.Deg2Rad, mSpread * Mathf.Deg2Rad * 0.5f));
         materialPropertyBlock.SetVector("_ShadowMapParams", shadowMapParams);
 
