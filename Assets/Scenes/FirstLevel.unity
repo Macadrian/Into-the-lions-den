@@ -43976,7 +43976,7 @@ PrefabInstance:
         type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 475831553}
     - target: {fileID: 3239636561663874754, guid: 2cf3e07599ae803428037a2c4281535c,
         type: 3}
       propertyPath: otherMenu
@@ -43986,7 +43986,7 @@ PrefabInstance:
         type: 3}
       propertyPath: manager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 475831553}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cf3e07599ae803428037a2c4281535c, type: 3}
 --- !u!1001 &1510312783
